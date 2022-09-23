@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Tatry</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/styles.css" rel="stylesheet" />
+        <link href="css/index.css" rel="stylesheet" />
+        <script src="js/index.js"></script>
+    </head>
+    <body onload="odliczanie()">
+        <!-- Responsive navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <div class="navbar-brand" id="zegar">
+                </div>
+                <a class="navbar-brand" href="index.html">Strona Główna</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="galeria.html">Galeria</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="formularz.html">Formularz wycieczkowy</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="wycieczki.html">Moje osiągi</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="kontakt.html">Kontakt</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Header - set the background image for the header in the line below-->
+        <header class="py-5 bg-image-full" style="background-image: url('https://image.ceneostatic.pl/data/products/100974372/i-muralo-fototapeta-zachod-slonca-w-gorach-widok-3d-360x240.jpg')">
+            <div class="text-center my-5">
+                <img class="img-fluid rounded-circle mb-4" src="https://ocdn.eu/pulscms-transforms/1/8EGk9kqTURBXy9iMjUzMzQ1MDc3YmNhNjY1MDQ5NGM2OGY3YTZiODkzOS5qcGVnk5UDABzNCLHNBOOTBc0DFM0BvJMJpmVjNzU4YgaBoTAB/tatry.jpg" alt="..." />
+                <h1>TATRY-POLSKIE GÓRY</h1>
+            </div>
+        </header>
+        <!-- Content section-->
+        <section class="py-2">
+            <div class="container my-2">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6">
+                        <h2>Czym są?</h2>
+                        <p class="lead">Tatry są najwyższym pasmem górskim leżącym w granicach Polski i najwyższym masywem w łańcuchu Karpat. Liczą ok. 60 km długości i od 15 do 20 km szerokości. Ich powierzchnia wynosi blisko 800 km². Ze względu na ukształtowanie terenu Tary dzielą się na Tatry Bielskie (Hawrań 2152 m n.p.m.), Tatry Wysokie (Gerlach 2655 m n.p.m.) i Tatry Zachodnie (Bystra 2248 m n.p.m.). Położone są pomiędzy czterema krainami geograficzno-historycznymi: Liptowem, Orawą, Podhalem i Spiszem, przy czym przez Tatry, Orawę i Spisz przebiega granica polsko-słowacka. Do Polski należy 175 km² powierzchni opisywanych gór. Tatry to góry wyjątkowe pod wieloma względami: przyrodniczym, historycznym, kulturowym. Mogą poszczycić się interesującą historią eksploracji. Od lat cieszą się niezmienną popularnością zarówno wśród turystów, jak i badaczy. Sieć szlaków udostępniona przez Tatrzański Park Narodowy liczy 275 km. </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Image element - set the background image for the header in the line below-->
+        <section class="py-2">
+        <div class="container my-2">
+            <!-- Heading Row-->
+            <div class="row justify-content-center" >
+        <div class="row">
+            <div class="row-md-5 carousel-column">
+                <h2>Kilka zdjęć</h2>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100"  src="karuzela/1.jpg" alt="First slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100"  src="karuzela/2.jpg" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100"  src="karuzela/3.jpg" alt="Third slide">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+            </div>
+        </div>
+            </div>
+        </div>
+        </section>
+        <!-- Content section-->
+        <section class="py-2">
+            <div class="container my-2">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6">
+                        <h2>Co tu można robić?</h2>
+                        <p class="lead">Można tu uprawiać zarówno turystykę pieszą, wspinaczkę, narciarstwo (zjazdowe, biegowe, skiturowe) oraz w ograniczonym zakresie kolarstwo górskie. Odwiedzający mogą skorzystać z gościnnych schronisk PTTK (na Polanie Chochołowskiej, na Hali Ornak, na Hali Kondratowej, na Hali Gąsienicowej, w Roztoce, w Dolinie Pięciu Stawów Polskich oraz nad Morskim Okiem). Dzięki programowi kulturowego wypasu owiec turyści mogą skosztować oryginalnych, owczych oscypków, a także napić się zéntycy (serwatki z owczego mleka). Usłyszą ponadto prawdziwą gwarę górali podhalańskich i zobaczą ich w regionalnych strojach.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Footer-->
+        <footer class="py-5 bg-dark">
+            <div class="container">
+                <p class="m-0 text-center text-white">Copyright &copy;DD 2021</p>
+            </div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <!-- Core theme JS-->
+        <script src="vendor/jquery/jquery.min.js"></script>
+        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>

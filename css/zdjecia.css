@@ -1,0 +1,34 @@
+@media screen and (max-width: 720px) {
+    #nav {
+        flex-direction: row;
+    }
+
+    #srodek {
+        flex-direction: column;
+    }
+
+    #tresc {
+        width: 100%;
+    }
+
+
+    ul#nav li li a {
+        width: 100%;
+
+    }
+}
+#zdjecia {
+    margin: 0 auto;
+    text-align: center;
+}
+#obrazki img{
+    margin: 10px;
+    border: 5px groove #394dd7;
+    transition: .15s ease-in-out;
+    border-radius: 5px;
+    box-shadow: 10px 10px 5px 0 #202020;
+}
+#obrazki img:hover{
+    transform: scale(1.1);
+    transition: .15s ease-in-out;
+}

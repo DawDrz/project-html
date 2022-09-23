@@ -1,0 +1,24 @@
+form {
+    background: #009efc;
+    text-align: center;
+    width: 94%;
+    margin: 2%;
+    border: 1pt solid #000040;
+    box-shadow: 10px 10px 5px 0 #202020;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+*.parzysty {
+    background: #ffffff;
+}
+
+table {
+    margin: 0 auto;
+}
+.zielony{
+    background-color: lightgreen;
+}
+.czerwone{
+    color: red !important;
+}

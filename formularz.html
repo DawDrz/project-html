@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <title>Tatry</title>
+  <!-- Favicon-->
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+  <!-- Core theme CSS (includes Bootstrap)-->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet" />
+  <link href="css/index.css" rel="stylesheet" />
+  <link href="css/formularz.css" rel="stylesheet" />
+  <script src="js/formularz.js"></script>
+  <script src="js/index.js"></script>
+</head>
+<body onload="odliczanie()">
+<!-- Responsive navbar-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <div class="navbar-brand" id="zegar">
+    </div>
+    <a class="navbar-brand" href="index.html">Strona Główna</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link active" aria-current="page" href="galeria.html">Galeria</a></li>
+        <li class="nav-item"><a class="nav-link active" href="formularz.html">Formularz wycieczkowy</a></li>
+        <li class="nav-item"><a class="nav-link active" href="wycieczki.html">Moje osiągi</a></li>
+        <li class="nav-item"><a class="nav-link active" href="kontakt.html">Kontakt</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- Content section-->
+<section class="py-2">
+  <div class="container my-2">
+    <div class="row justify-content-center">
+      <div class="col-lg-6">
+        <h2>Formularz wycieczkowy</h2>
+        <p class="lead">Zakładka ta to formularz zgłoszeniowy, w którym do wyboru są dostępne wycieczki organizowane przez stronę. Wypełniający formularz powinien zaznaczyć interesujące go opcje, a nastepnie wypełnić pola z danymi kontaktowymi. Po kliknięciu przycisku ,,Wyślij" formularz zostanie wysłany na maila.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Image element - set the background image for the header in the line below-->
+<section class="py-2">
+  <div class="container my-2">
+    <!-- Heading Row-->
+    <div class="row justify-content-center" >
+      <div class="row">
+        <div>
+
+          <form id="formularz" method="post" action="mailto:xxx@xxx.xx" onsubmit="return sprawdz()" >
+            <table>
+              <tr> <td>Imie: </td>
+                <td><input name="imie" size="30" id="imie"/> </td>
+                <td id="imie_error" class="czerwone"></td>
+              </tr>
+              <tr> <td>Nazwisko: </td>
+                <td><input name="nazw" size="30" id="nazw"/> </td>
+                <td id="nazw_error" class="czerwone"></td>
+              </tr>
+              <tr> <td>Wiek:</td>
+                <td><input name="wiek" size ="30" id="wiek"/></td>
+                <td id="wiek_error" class="czerwone"></td>
+              </tr>
+              <tr> <td>Płeć:</td>
+                <td><select name="plec" id="plec">
+                  <option value="Mężczyzna" selected="selected">Mężczyzna</option>
+                  <option value="Kobieta">Kobieta</option>
+                </select>
+                </td>
+              </tr>
+              <tr> <td>Adres e-mail: </td>
+                <td><input name="email" size ="30" id="email"/></td>
+                <td id="email_error" class="czerwone"></td>
+              </tr>
+            </table>
+            <h4>Preferowany sposób spędzania czasu:</h4>
+            <p><input name="pref" type="checkbox" value="zwiedzanie"/>Zwiedzanie
+              <input name="pref" type="checkbox" value="chodzenie po gorach"/>Chodzenie po górach
+              <input name="pref" type="checkbox" value="spokojny odpoczynek"/>Spokojny odpoczynek
+              <input name="pref" type="checkbox" value="ekstremalne wycieczki"/>Ekstremalne wycieczki
+              <input name="pref" type="checkbox" value="najlepsze atrakcje"/>Najlepsze atrakcje
+              <span id="produkt_error" class="czerwone"></span></p>
+            <h4>Czas wycieczki:</h4>
+            <p><input name="czas" id="czas" type="radio" value="1 dzien" checked="checked" />1 dzień
+              <input name="czas" type="radio" value= "3 dni" />3 dni
+              <input name="czas" type="radio" value= "7 dni" />7 dni
+              <input name="czas" type="radio" value= "2 tygodnie" />2 tygodnie
+              <input name="czas" type="radio" value= "inny" />Inny
+              <span id="czas_error" class="czerwone"></span><br />
+              <input type="submit" value=" Wyślij " />
+              <input type="reset" value=" Anuluj " /></p>
+          </form>
+
+
+        </div>
+        </div>
+      </div>
+    </div>
+</section>
+<!-- Content section-->
+<section class="py-2">
+  <div class="container my-2">
+    <div class="row justify-content-center">
+      <div class="col-lg-6">
+        <h2>Co tu można robić?</h2>
+        <p class="lead">Można tu uprawiać zarówno turystykę pieszą, wspinaczkę, narciarstwo (zjazdowe, biegowe, skiturowe) oraz w ograniczonym zakresie kolarstwo górskie. Odwiedzający mogą skorzystać z gościnnych schronisk PTTK (na Polanie Chochołowskiej, na Hali Ornak, na Hali Kondratowej, na Hali Gąsienicowej, w Roztoce, w Dolinie Pięciu Stawów Polskich oraz nad Morskim Okiem). Dzięki programowi kulturowego wypasu owiec turyści mogą skosztować oryginalnych, owczych oscypków, a także napić się zéntycy (serwatki z owczego mleka). Usłyszą ponadto prawdziwą gwarę górali podhalańskich i zobaczą ich w regionalnych strojach.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Footer-->
+<footer class="py-5 bg-dark">
+  <div class="container"><p class="m-0 text-center text-white">Copyright &copy;DD 2021</p></div>
+</footer>
+<!-- Bootstrap core JS-->
+<!-- Core theme JS-->
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

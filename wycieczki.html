@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <title>Tatry</title>
+  <!-- Favicon-->
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+  <!-- Core theme CSS (includes Bootstrap)-->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet" />
+  <link href="css/wycieczki.css" rel="stylesheet" />
+  <script src="js/wycieczki.js"></script>
+  <script src="js/index.js"></script>
+</head>
+<body onload="odliczanie()">
+<!-- Responsive navbar-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <div class="navbar-brand" id="zegar">
+    </div>
+    <a class="navbar-brand" href="index.html">Strona Główna</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link active" aria-current="page" href="galeria.html">Galeria</a></li>
+        <li class="nav-item"><a class="nav-link active" href="formularz.html">Formularz wycieczkowy</a></li>
+        <li class="nav-item"><a class="nav-link active" href="wycieczki.html">Moje osiągi</a></li>
+        <li class="nav-item"><a class="nav-link active" href="kontakt.html">Kontakt</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- Content section-->
+<section class="py-2">
+  <div class="container my-2">
+    <div class="row justify-content-center">
+      <div class="col-lg-6">
+        <h2>Moje osiągnięte szczyty</h2>
+        <p class="lead">W tej zakładce możesz dodać osiągniete przez Ciebie szczyty górskie, będą one wyświetlone poniżej po kliknięciu odpowiedniego przycisku.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Image element - set the background image for the header in the line below-->
+<section class="py-2">
+  <div class="container my-2">
+    <div class="row justify-content-center">
+      <div class="col-lg-6">
+        <p class="lead">
+        <form>
+
+          <h1>Dodaj szczyty poniżej</h1><br>
+          <table>
+            <tr><td>Nazwa szczytu: <label for="szczyt"></label></td>
+            <td><input id="szczyt" pattern="[a-zA-Z]{2,20}"><br></td>
+            </tr>
+            <tr><td>Wysokość: <label for="wysokosc"></label></td>
+              <td><input id="wysokosc" type="number"><br></td>
+            </tr>
+          </table>
+          <h4>Stopień trudności:</h4>
+          <input name="stopien" type="radio" value="latwy" checked="checked" />Łatwy<br>
+          <input name="stopien" type="radio" value= "sredni" />Średni<br>
+          <input name="stopien" type="radio" value= "ciezki" />Ciężki<br>
+          <button onclick="zapisz()">Zapisz parę</button> <button type="button" onclick="pokaz()">Pokaż wszystkie pary</button> <button onclick="usun()">Usuń
+          dane</button><br>
+        </form>
+        <h1>Lista osiągnięć</h1>
+        <div id="dane"></div>
+
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Content section-->
+<section class="py-2">
+  <div class="container my-2">
+    <div class="row justify-content-center">
+      <div class="col-lg-6">
+        <h2>Po co zapisywać swoje osiągnięcia?</h2>
+        <p class="lead">Przede wszystkim dla własnej satysfakcji. Ważne jest też, żeby nie zapomnieć tych wszystkich wspaniałych chwil, które przeżyliśmy wchodząc na szczyty dlatego lepiej mieć to wszystko gdzieś zapisane. Jeżeli nie klikniesz przycisku ,,Usuń dane" będą one na tej stronie w nieskończoność. W przyszłości może powstanie ranking osób z najwiekszą ilością osiągnietych szczytów.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Footer-->
+<footer class="py-5 bg-dark">
+  <div class="container"><p class="m-0 text-center text-white">Copyright &copy;DD 2021</p></div>
+</footer>
+<!-- Bootstrap core JS-->
+<!-- Core theme JS-->
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
